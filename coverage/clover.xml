@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1641217677451" clover="3.2.0">
+  <project timestamp="1641217677451" name="All files">
+    <metrics statements="20" coveredstatements="19" conditionals="4" coveredconditionals="2" methods="11" coveredmethods="11" elements="35" coveredelements="32" complexity="0" loc="20" ncloc="20" packages="1" files="2" classes="2"/>
+    <file name="arith.js" path="D:\GitHub\Xoommit\webpack-all\src\__test__\arith.js">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+    </file>
+    <file name="code.js" path="D:\GitHub\Xoommit\webpack-all\src\__test__\code.js">
+      <metrics statements="15" coveredstatements="14" conditionals="4" coveredconditionals="2" methods="7" coveredmethods="7"/>
+      <line num="2" count="2" type="cond" truecount="2" falsecount="2"/>
+      <line num="3" count="0" type="stmt"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="14" count="3" type="stmt"/>
+      <line num="17" count="3" type="stmt"/>
+      <line num="20" count="3" type="stmt"/>
+      <line num="23" count="3" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="29" count="1" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="33" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

@@ -1,0 +1,43 @@
+{
+  "name": "webpack-starters",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A collection of different Webpack setups for quick referencing or starting from",
+  "scripts": {
+    "start": "cross-env SERVE=true webpack serve",
+    "watch": "webpack --watch",
+    "build": "cross-env NODE_ENV=production webpack",
+    "build-dev": "webpack",
+    "clean": "rm -rf ./dist",
+    "test": "jest --coverage"
+  },
+  "author": "Mike van Eckendonk",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
+    "babel-jest": "^27.4.5",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.7",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.4.5",
+    "mini-css-extract-plugin": "^2.4.5",
+    "postcss": "^8.4.4",
+    "postcss-loader": "^4.3.0",
+    "postcss-preset-env": "^6.7.0",
+    "react-refresh": "^0.9.0",
+    "sass": "^1.44.0",
+    "sass-loader": "^10.2.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
