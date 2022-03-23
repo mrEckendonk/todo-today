@@ -1,7 +1,7 @@
 import './style.css';
-import listTodo from './modules/list.js';
+import listTodo from './modules/list';
 
-const todos = new listTodo();
+const Todos = new listTodo();
 
 // const myList = storageManager.getData();
 const input = document.querySelector('.input');
@@ -11,7 +11,7 @@ input.addEventListener('keypress', (e) => {
       description: input.value,
     };
     input.value = '';
-    todos.addTodo(newTodo);
+    Todos.addTodo(newTodo);
     renderList();
   }
 });
@@ -19,7 +19,7 @@ input.addEventListener('keypress', (e) => {
 // constuctor todoList
 const renderList = () => {
   let todoList = '';
-  todos.list.forEach((item) => {
+  Todos.list.forEach((item) => {
     todoList += `<li class="todo-li"><input type="checkbox">
           <p contenteditable="true" class="todo-edit" id="${item.index}">${item.description}</p>
           <i class="fas fa-trash icon trash"></i>
@@ -33,7 +33,7 @@ const renderList = () => {
   trash.forEach((item) => {
     item.addEventListener('click', (e) => {
       const index = e.target.parentNode.querySelector('.todo-edit').id;
-      todos.removeTodo(+index);
+      Todos.removeTodo(+index);
       renderList();
     });
   });
@@ -44,7 +44,7 @@ const renderList = () => {
     item.addEventListener('blur', (e) => {
       const index = e.target.id;
       if (e.target.innerText.trim() === '') {
-        e.target.innerText = todos.list[+index - 1].description;
+        e.target.innerText = Todos.list[+index - 1].description;
         return;
       }
 
@@ -53,7 +53,7 @@ const renderList = () => {
         description,
         index,
       };
-      todos.updateTodo(todo);
+      Todos.updateTodo(todo);
       renderList();
     });
   });
