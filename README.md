@@ -18,7 +18,7 @@ Additional description about the project and its features.
 - Git & GitHub
 ## Live Demo link (develop branch)
 
-[Live Demo Link](todo-today-eckendonk.netlify.app)
+[Live Demo Link](https://todo-today-eckendonk.netlify.app)
 
 
 ## Getting Started
