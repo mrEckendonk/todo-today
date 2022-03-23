@@ -14,6 +14,12 @@ ul {
   margin: 0;
 }
 
+p {
+  border: none;
+  outline: none;
+  overflow: hidden;
+}
+
 .cnt {
   width: 550px;
   height: 100%;
@@ -33,7 +39,6 @@ ul {
 }
 
 .cnt-add {
-  /* font-style: italic; */
   display: flex;
   justify-content: space-between;
   height: 40px;
@@ -64,26 +69,14 @@ ul {
   border: none;
   outline: none;
   overflow: hidden;
-
-  /* border-top-style: hidden; */
-
-  /* border-right-style: hidden; */
-
-  /* border-left-style: hidden; */
-
-  /* border-bottom-style: hidden; */
 }
 
 .todo-li {
   display: flex;
-
-  /* flex-direction: row; */
   height: 40px;
   align-items: center;
-
-  /* justify-content: space-around; */
   border-bottom: 3px solid rgb(182, 182, 182);
-  padding-left: 1rem;
+  padding-left: 16px;
 }
 
 .todo-edit {
@@ -97,8 +90,6 @@ ul {
 
 .drag {
   cursor: move;
-
-  /* color: rgb(172, 30, 30); */
 }
 
 .trash {

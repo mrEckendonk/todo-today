@@ -4,7 +4,7 @@
 This repo is an almost exact copy of this Youtube video: https://www.youtube.com/watch?v=AcUd-_Yjjqg
 
 
-![screenshot](./app_screenshot.png)
+![screenshot](./todo-list.png)
 
 Additional description about the project and its features.
 
@@ -18,7 +18,7 @@ Additional description about the project and its features.
 - Git & GitHub
 ## Live Demo link (develop branch)
 
-[Live Demo Link](todo-today-eckendonk.netlify.app)
+[Live Demo Link](https://todo-today-eckendonk.netlify.app)
 
 
 ## Getting Started
@@ -45,7 +45,7 @@ $ git clone https://github.com/mrEckendonk/todo-today.git
 $ npm start
 ```
 ### Usage
-For anyone that whats to learn html & css & Js
+For anyone that whats to learn html & css3 & Js
 ### Run tests
 N/A
 ### Deployment
