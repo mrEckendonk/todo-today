@@ -12,11 +12,11 @@ input.addEventListener('keypress', (e) => {
     };
     input.value = '';
     todos.addTodo(newTodo);
-    renderList()
+    renderList();
   }
-})
+});
 
-// constuctr todoList
+// constuctor todoList
 const renderList = () => {
   let todoList = '';
   todos.list.forEach((item) => {
@@ -51,12 +51,12 @@ const renderList = () => {
       const description = e.target.innerText;
       const todo = {
         description,
-        index
+        index,
       };
       todos.updateTodo(todo);
       renderList();
     });
   });
-}
+};
 
 renderList();

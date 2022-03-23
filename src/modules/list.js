@@ -11,9 +11,9 @@ export default class listTodo {
     localStorage.setItem('todoList', JSON.stringify(this.list));
   }
 
-  //remove todo & update index +1
+  // remove todo & update index +1
   removeTodo(index) {
-    this.list = this.list.filter(item => item.index !== index);
+    this.list = this.list.filter((item) => item.index !== index);
     this.list = this.list.map((item, i) => ({ ...item, index: i + 1 }));
     localStorage.setItem('todoList', JSON.stringify(this.list));
   }
@@ -22,7 +22,4 @@ export default class listTodo {
     this.list[todo.index - 1] = todo;
     localStorage.setItem('todoList', JSON.stringify(this.list));
   }
-};
-
-
-
+}

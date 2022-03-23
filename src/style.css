@@ -33,14 +33,14 @@ p {
 
 .cnt-1 {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   height: 40px;
   border-bottom: 3px solid rgb(182, 182, 182);
 }
 
 .cnt-add {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   height: 40px;
   border-bottom: 3px solid rgb(182, 182, 182);
 }
@@ -59,7 +59,7 @@ p {
 }
 
 .icon {
-    margin: 15px;
+  margin: 15px;
 }
 
 .input {
@@ -85,7 +85,7 @@ p {
 }
 
 .restart {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .drag {
