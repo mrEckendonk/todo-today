@@ -22,4 +22,10 @@ export default class listTodo {
     this.list[todo.index - 1] = todo;
     localStorage.setItem('todoList', JSON.stringify(this.list));
   }
+
+  clearCompleted() {
+    this.list = this.list.filter((item) => !item.completed);
+    this.list = this.list.map((item, i) => ({ ...item, index: i + 1 }));
+    localStorage.setItem('todoList', JSON.stringify(this.list));
+  }
 }
