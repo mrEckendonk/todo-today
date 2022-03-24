@@ -96,3 +96,8 @@ p {
   cursor: pointer;
   color: rgb(172, 30, 30);
 }
+
+.checked:checked + p {
+  text-decoration: line-through;
+  font-weight: bold;
+}
