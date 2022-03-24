@@ -1,34 +1,32 @@
 import './style.css';
-import listTodo from './modules/list.js';
+import ListTodo from './modules/list';
 
-// triggers constructor to run to create the list and create todos list 
-const todos = new listTodo();
-
-// const myList = storageManager.getData();
-const input = document.querySelector('.input');
-input.addEventListener('keypress', (e) => {
-  if (e.keyCode === 13 && input.value.trim() !== '') {
-    const newTodo = {
-      description: input.value,
-    };
-    input.value = '';
-    todos.addTodo(newTodo);
-    renderList()
-  }
-});
+// triggers constructor to run to create the list and create todos list
+const todos = new ListTodo();
 
 // constuctor todoList
 const renderList = () => {
   let todoList = '';
   todos.list.forEach((item) => {
-    todoList += `<li class="todo-li"><input ${item.completed ? "checked" : ""} type="checkbox" class="checked">
+    todoList += `<li class="todo-li"><input ${item.completed ? 'checked' : ''} type="checkbox" class="checked">
           <p contenteditable="true" class="todo-edit" id="${item.index}">${item.description}</p>
           <i class="fas fa-trash icon trash"></i>
           <i class="fas fa-ellipsis-v icon drag"></i>
         </li>`;
   });
   document.querySelector('.todo-items').innerHTML = todoList;
-
+  // const myList = storageManager.getData();
+  const input = document.querySelector('.input');
+  input.addEventListener('keypress', (e) => {
+    if (e.keyCode === 13 && input.value.trim() !== '') {
+      const newTodo = {
+        description: input.value,
+      };
+      input.value = '';
+      todos.addTodo(newTodo);
+      renderList();
+    }
+  });
   // add event listener to delete todo
   const trash = document.querySelectorAll('.trash');
   trash.forEach((item) => {
@@ -52,7 +50,7 @@ const renderList = () => {
       const description = e.target.innerText;
       const todo = {
         description,
-        index
+        index,
       };
       todos.updateTodo(todo);
       renderList();
@@ -70,7 +68,7 @@ const renderList = () => {
       renderList();
     });
   });
-}
+};
 
 const clearAll = document.querySelector('.clear-complete');
 clearAll.addEventListener('click', () => {
