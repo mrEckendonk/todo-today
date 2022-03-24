@@ -97,7 +97,7 @@ p {
   color: rgb(172, 30, 30);
 }
 
-.checked:checked +p {
+.checked:checked + p {
   text-decoration: line-through;
   font-weight: bold;
 }
