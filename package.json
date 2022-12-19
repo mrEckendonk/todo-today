@@ -39,7 +39,7 @@
     "postcss-preset-env": "^6.7.0",
     "react-refresh": "^0.9.0",
     "sass": "^1.44.0",
-    "sass-loader": "^10.2.0",
+    "sass-loader": "^13.2.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "22.x",
     "stylelint-csstree-validator": "1.x",
