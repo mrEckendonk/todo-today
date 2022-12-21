@@ -34,7 +34,7 @@ const renderList = () => {
     }
   });
 
-  // add event listener to delete todo
+  // add event listener to delete todo!
   // const trash = document.querySelectorAll('.trash');
   // trash.forEach((item) => {
   //   item.addEventListener('click', (e) => {
