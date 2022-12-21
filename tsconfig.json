@@ -1,9 +1,14 @@
 {
     "compilerOptions": {
-        "sourceMap": true,
-        "jsx": "react",
-        "target": "ES6",
-        "allowJs": true,
+        "outDir": "./dist/",
+        "target": "ES2015",
+        "module": "commonjs",
+        "strict": true,
         "esModuleInterop": true,
-    }
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Recommended"
 }
