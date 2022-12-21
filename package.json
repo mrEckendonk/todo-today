@@ -40,10 +40,10 @@
     "react-refresh": "^0.14.0",
     "sass": "^1.44.0",
     "sass-loader": "^13.2.0",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "22.x",
+    "stylelint": "^14.16.0",
+    "stylelint-config-standard": "29.x",
     "stylelint-csstree-validator": "2.x",
-    "stylelint-scss": "3.x",
+    "stylelint-scss": "4.x",
     "webpack": "^5.65.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.7.2"
