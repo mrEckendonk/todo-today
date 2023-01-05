@@ -24,7 +24,7 @@
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "babel-eslint": "10.x",
     "babel-jest": "^29.3.1",
-    "babel-loader": "^9.1.0",
+    "babel-loader": "^9.1.2",
     "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.3",
