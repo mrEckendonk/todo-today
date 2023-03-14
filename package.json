@@ -18,7 +18,7 @@
   "author": "Mike van Eckendonk",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.20.7",
+    "@babel/core": "^7.21.3",
     "@babel/preset-env": "^7.16.5",
     "@babel/preset-react": "^7.16.5",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
